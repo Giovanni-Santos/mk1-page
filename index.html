@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mortal-Kombat</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles/global.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="background">
+    <video loop autoplay muted>
+      <source src="assets/background-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="app">
+    <header>
+      <img src="assets/logo-cap.png" alt="">
+
+      <ul class="navigation">
+        
+        <li>
+          <a href="index.html" class="navigation_link">Home</a>
+        </li>
+
+        <li>
+          <a href="story.html" class="navigation_link">Story</a>
+        </li>
+
+      </ul>
+    </header>
+
+    <main>
+      <div class="main_info">
+        <img 
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        src="assets/logo-game.png" 
+        width="300px"
+        />
+
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+        >
+          A história de Mortal Kombat 1 dá continuidade aos eventos de Aftermath, a expansão de Mortal Kombat 11. Na ocasião, Liu Kang se torna um Deus após absorver os poderes de Raiden para derrotar Kronika, que controlava a Ampulheta responsável por moldar o tempo.
+        </p>
+
+        <div 
+        class="botoes"
+        data-aos="zoom-in"
+        >
+            <button class="trailer">
+              <a href="https://www.youtube.com/watch?v=Ue1Yo-3QnRc">Assistir Trailer</a>
+            </button>
+          
+            <button class="shop">
+              <a href="https://www.mortalkombat.com/pt-br/purchase">Comprar MK 1</a>
+            </button>
+        </div>
+      </div>
+
+      <div class="personagens">
+        <div class="scorpion">
+          <img src="assets/scorpion.png" alt="Scorpion">
+        </div>
+        <div class="subzero">
+          <img src="assets/subzero.png" alt="Subzero">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

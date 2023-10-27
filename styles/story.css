@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'mk1';
+    src: url(../assets/mk1.ttf);
+}
+
+body {
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    font-family: 'mk1';
+    user-select: none;
+}
+
+.fighters img:hover{
+    border: 0.5vh rgb(0, 196, 0) solid;
+}
+
+.fundo img {
+    position: relative;
+    height: 100vh;
+    width: 100vw;   
+}
+
+.cage img {
+    position: absolute;
+    margin-left: -87%;
+    margin-top: -33vh;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.subz img {
+    position: absolute;
+    margin-left: -72%;
+    margin-top: -33vh;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.scorp img {
+    position: absolute;
+    margin-left: -42%;
+    margin-top: -33vh;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.raid img {
+    position: absolute;
+    margin-left: -26.7%;
+    margin-top: -33vh;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.kung img {
+    position: absolute;
+    margin-left: -42%;
+    margin-top: -1%;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.liu img {
+    position: absolute;
+    margin-left: -57%;
+    margin-top: -1%;
+    height: 29vh;
+    width: 13.5%;
+}
+
+.shang img {
+    position: absolute;
+    margin-left: -71.7%;
+    margin-top: -1%;
+    height: 29vh;
+    width: 13.5%;
+}
+
+#fighterSprite{
+    background-color: rgba(0, 0, 255, 0);
+    position: absolute;
+    z-index: 2;
+    left: 11%;
+    bottom: 5%;
+    width: 23vh;
+    height: 40vh;
+}
+
+#fighterSprite img{
+    width: 100%;
+    height: 100%;
+}
+
+#f1, #f2, #f3, #f4, #f5, #f6, #f7{
+    display: none;
+}
+
+#cageStory, #subZeroStory, #scorpionStory, #raidenStory, #shangTsungStory, #liuKangStory, #kungLaoStory{
+    display: none;
+    z-index: 3;
+}
+
+.block{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.title{
+    position: absolute;
+    left: 50%;
+    color: yellow;
+    text-shadow: 0.3vh 0.3vh 0 black;
+    top: 2.5%;
+    font-size: 6vh;
+    animation: title 1s linear forwards;
+}
+
+.lore{
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-47%);
+}
+
+.lore img{
+    width: 120%;
+    height: 65vh;
+}
+
+.closeStory{
+    display: block;
+    font-size: 4vh;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    color: yellow;
+    cursor: pointer;
+}
+
+.home{
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.home img{
+    width: 100%;
+    height: 10vh;
+}
+
+@keyframes title {
+    from{
+        transform: translateY(-200%) translateX(-50%);
+    }
+    to{
+        transform: translateY(0)  translateX(-50%);
+    }
+}

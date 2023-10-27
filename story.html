@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mortal-Kombat</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./styles/global.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/story.css">
+</head>
+<body>
+  <!-- Sons-->
+  <audio id="mkSong" controls style="display: none;">
+    <source src="assets/mkSong.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="mk1Select" controls style="display: none;">
+    <source src="assets/mk1Select.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="johnny" controls style="display: none;">
+    <source src="assets/sfx/johnny.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="subZero" controls style="display: none;">
+    <source src="assets/sfx/subzero.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="scorpion" controls style="display: none;">
+    <source src="assets/sfx/scorpion.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="raiden" controls style="display: none;">
+    <source src="assets/sfx/raiden.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="shangTsung" controls style="display: none;">
+    <source src="assets/sfx/shangTsung.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="liuKang" controls style="display: none;">
+    <source src="assets/sfx/liuKang.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="kungLao" controls style="display: none;">
+    <source src="assets/sfx/kungLao.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <div class="fundo">
+      <img src="assets/choose-yf.png" alt="">
+    </div>
+
+    <div class="title">
+      <span>Select your fighter</span>
+    </div>
+    <div class="block"></div>
+
+    <div class="lore">
+      <div class="story" id="cageStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/cage-story.png">
+      </div>
+      <div class="story" id="subZeroStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/sub-story.png">
+      </div>
+      <div class="story" id="scorpionStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/scorp-story.png">
+      </div>
+      <div class="story" id="raidenStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/raiden-story.png">
+      </div>
+      <div class="story" id="shangTsungStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/shang-story.png">
+      </div>
+      <div class="story" id="liuKangStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/liuk-story.png">
+      </div>
+      <div class="story" id="kungLaoStory">
+        <span class="closeStory">X</span>
+        <img src="assets/story-assets/kung-story.png">
+      </div>
+    </div>
+
+    <div class="fighters">
+      <div class="cage">
+        <img src="assets/story-assets/jc.png" id="cageImg">
+      </div>
+      <div class="subz">
+        <img src="assets/story-assets/sz.png" id="subImg">
+      </div>
+      <div class="scorp">
+        <img src="assets/story-assets/sc.png" id="scorpImg">
+      </div>
+      <div class="raid">
+        <img src="assets/story-assets/rd.png" id="raidImg">
+      </div>
+      <div class="shang">
+        <img src="assets/story-assets/st.png" id="shangImg">
+      </div>
+      <div class="liu">
+        <img src="assets/story-assets/lk.png" id="liuImg">
+      </div>
+      <div class="kung">
+        <img src="assets/story-assets/kl.png" id="kungImg">
+      </div>
+    </div>
+
+
+
+    <div id="fighterSprite">
+      <img src="assets/sprites/johnyCage.gif" id="f1">
+      <img src="assets/sprites/subZero.gif" id="f2">
+      <img src="assets/sprites/scorpion.gif" id="f3">
+      <img src="assets/sprites/raiden.gif" id="f4">
+      <img src="assets/sprites/shangTsung.gif" id="f5">
+      <img src="assets/sprites/liuKang.gif" id="f6">
+      <img src="assets/sprites/kungLao.gif" id="f7">
+    </div>
+
+    <div class="home">
+      <img src="assets/story-assets/especial-button.png">
+    </div>
+  </main>      
+  
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+main {
+  flex: 1;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 1440px;
+
+}
+
+.main_info {
+  width: 100%;
+}
+
+.main_info img {
+  margin-left: 38%;
+}
+
+.main_info p {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 28px;
+  margin-left: 31%;
+  height: auto;
+  width: 400px;
+}
+
+.main_info div {
+  display: flex;
+  column-gap: 32px;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transform: skew(-20deg);
+}
+
+.trailer {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid #ffe600;
+  margin-right: 30px;
+}
+
+.shop {
+  background-color: transparent; 
+  color: white;  
+  border: 2px solid #003cff;
+  margin-left: 30px;
+}
+
+.trailer:hover {
+  background-color: #ffe600;
+  color: white;
+}
+
+.shop:hover {
+  background-color: #003cff;
+  color: white;
+}
+
+.botoes {
+  width: 500px;
+  margin-left: 34%;
+  margin-bottom: 50px;
+}
+
+.personagens img {
+  bottom: 0;
+}
+
+.personagens{
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  bottom: 7vh;
+  left: 0;
+  z-index: -1;
+}
+
+.scorpion img, .subzero img{
+  width: 100%;
+  height: 60vh;
+}
+
+
+
+
